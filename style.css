@@ -20,8 +20,8 @@ html, body {
 @keyframes ani1{
     0%{transform: rotate(0deg) scale(1.5);}
     80%{transform: rotate(70deg) scale(3);opacity: 1;}
-    99%{transform: rotate(70deg) scale(3); opacity: 0;}
-    100%{transform: rotate(70deg) scale(3); opacity: 0; display: none;}
+    99%{transform: rotate(70deg) scale(3); opacity: 0; z-index: 99999;}
+    100%{transform: rotate(70deg) scale(3); opacity: 0; display: none;z-index: -999999;}
 }
 .world {
   position: absolute;
@@ -32,6 +32,7 @@ html, body {
   cursor: -moz-grab;
   cursor: -webkit-grab;
   cursor: grab;
+    z-index: 999;
 }
 
 .all-image img{
